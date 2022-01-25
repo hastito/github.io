@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title id="title"></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+<link rel="stylesheet" href="css/desa-digital.css">
+<link rel="icon" href="img/favicon.png" />
+<script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+<script type="text/javascript" src="js/PrayTimes.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-8 mr-a box-semua" id="main" style="float:none">
+<div class="row">
+<div class="col-4">
+<div class="row">
+<div class="col-12">
+<div class="logo bmh-80 text-center"><img src="img/logo.png" alt="Desa Digital" style="border-radius:5px;width:100%;max-width:240px;height:auto"/></div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<center><span class=><b><font color="#2874A6"><font size="4">بِسْــــــــــــــــمِ اﷲِالرَّحْمَنِ الرَّحِيم
+</font><br></center></strong><br></font>
+</div>
+<center><b><script type='text/javascript'>/*<![CDATA[*/var months=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];var myDays=["Minggu","Senin","Selasa","Rabu","Kamis","Jum&#39;at","Sabtu"];var date=new Date();var day=date.getDate();var month=date.getMonth();var thisDay=date.getDay(),thisDay=myDays[thisDay];var yy=date.getYear();var year=(yy<1000)?yy+1900:yy;document.write(thisDay+", "+day+" "+months[month]+" "+year);/*]]>*/</script></center></b>
+<center><b><div id="jam"></div></center></b>
+</div>
+<div class="row">
+<div class="bawah-judul text-grey"><p>Silahkan masukkan kode <b>Voucher</b></b></p></div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="card">
+<div class="login">
+$(if chap-id)
+<form name="sendin" action="$(link-login-only)" method="post">
+<input type="hidden" name="username" />
+<input type="hidden" name="password" />
+<input type="hidden" name="dst" value="$(link-orig)" />
+<input type="hidden" name="popup" value="true" />
+</form>
+<script type="text/javascript" src="/md5.js"></script>
+<script type="text/javascript">function doLogin(){document.sendin.username.value=document.login.username.value;document.sendin.password.value=hexMD5("$(chap-id)"+document.login.password.value+"$(chap-challenge)");document.sendin.submit();return false}</script>
+$(endif)
+<div>
+<form autocomplete="off" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+<input type="hidden" name="dst" value="$(link-orig)" />
+<input type="hidden" name="popup" value="true" />
+<div class="row">
+$(if trial == 'no')
+<div class="col-4 col-md-4">
+<div class="box mr-2 pointer text-center text-light tombol" id="btnvcr" onclick="voucher()">VOUCHER</div>
+</div>
+<div class="col-4 col-md-4">
+<div class="box mr-2 pointer text-center text-light tombol" id="btnmem" onclick="member()">MEMBER</div>
+</div>
+$(elif trial == 'yes')
+$(endif)
+</div>
+<input class="form-control-md mr-t-10 plch-center" name="username" type="text" value="$(username)" placeholder="Masukan Kode Voucher" />
+<input class="form-control-md mr-t-10 plch-center" name="password" type="hidden" placeholder="Password" />
+<div class="text-center mr-t-10">
+<button type="submit" class="w-12 bg-template btn-md pd-5">Login</button>
+</div>
+</form>
+</div>
+$(if error)<div class="alert bg-danger text-center mr-t-10">$(error)</div>$(endif)
+</div>
+</div>
+</div>
+</div>
+<div class="rainbow-line"></div>
+<div id="Date"></div>
+<div id="clock"></div>
+<div id="jamtime"><center>
+<ul class="jamtime">
+<li id="hours"> </li>
+<li id="point"></li>
+<li id="min"> </li>
+<li id="point"></li>
+<li id="sec"> </li>
+</ul>
+</div>
+<div id="prayss" class="prayss">
+<div class="prayss__inner">
+<center><h3 class="title-kota">Gunakan Internet<br>Sebaik-Baiknya</h3></center>
+</div>
+</div>
+</div>
+</div>
+<div class="col-8">
+<div class="row"><br>
+<div class="logo bmh-80 text-center"><img src="img/google.gif" alt="Desa Digital" style="border-radius:25px;width:100%;max-width:300px;height:auto"/></div>
+<center>
+<span class="blink">Hastito.Net<a class="login" href="http://youtube.com/c/AdhiTechno" id="login" title="Youtube Channel"> <small><b> <font color="#006400"></font></b></small></a></span>
+</center>
+</div>
+</div>
+</div>
+</div>
+<style>.blink{animation:blink-animation 1s steps(5,start) infinite;-webkit-animation:blink-animation 1s steps(5,start) infinite}@keyframes blink-animation{to{visibility:hidden}}@-webkit-keyframes blink-animation{to{visibility:hidden}}</style>
+<script type="text/javascript">document.login.username.focus();document.getElementById("title").innerHTML=window.location.hostname+" > login";var username=document.login.username;var password=document.login.password;var luser=document.getElementById("luser");var lpass=document.getElementById("lpass");var btnmem=document.getElementById("btnmem");var btnvcr=document.getElementById("btnvcr");function setpass(){var a=username.value;password.value=a}username.onchange=setpass;btnmem.style.backgroundColor="#006400";btnvcr.style.backgroundColor="#006400";btntrial.style.backgroundColor="#006400";function voucher(){username.focus();username.onchange=setpass;username.placeholder="Voucher";password.type="hidden";password.value=username.value;btnmem.style.backgroundColor="#006400";btnvcr.style.backgroundColor="#006400";btntrial.style.backgroundColor="#006400"}function member(){username.focus();username.onchange="";username.placeholder="Username";password.type="password";password.value="";btnmem.style.backgroundColor="#006400";btnvcr.style.backgroundColor="#006400";btntrial.style.backgroundColor="#006400"}</script>
+<script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){var b=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];var c=["Ahad","Senin","Selasa","Rabu","Kamis","Juma't","Sabtu"];var a=new Date();a.setDate(a.getDate());$("#Date").html(c[a.getDay()]+" "+a.getDate()+" "+b[a.getMonth()]+" "+a.getFullYear());setInterval(function(){var d=new Date().getSeconds();$("#sec").html((d<10?"0":"")+d)},1000);setInterval(function(){var d=new Date().getMinutes();$("#min").html((d<10?"0":"")+d)},1000);setInterval(function(){var d=new Date().getHours();$("#hours").html((d<10?"0":"")+d)},1000)});/*]]>*/</script>
+<script type="text/javascript">/*<![CDATA[*/var date=new Date();prayTimes.setMethod("MWL");prayTimes.tune({fajr:2,dhuhr:2,asr:2,maghrib:2,isha:2});var times=prayTimes.getTimes(date,[-7.488075,112.427027],7);var list=["Fajr","Dhuhr","Asr","Maghrib","Isha"];var nama=["Subuh","Dhuhur","Ashar","Maghrib","Isya"];var html='<table id="timetable"><tr>';for(var i in list){html+="<td><span>"+nama[i]+"</span><br/>"+times[list[i].toLowerCase()]+"</td>"}html+="</tr></table>";document.getElementById("table").innerHTML=html;/*]]>*/</script>
+<script type="text/javascript">window.setTimeout("waktu()",1000);function waktu(){var a=new Date();setTimeout("waktu()",1000);document.getElementById("jam").innerHTML=a.getHours()+":"+a.getMinutes()+":"+a.getSeconds()};</script>
+</body>
+</html>
